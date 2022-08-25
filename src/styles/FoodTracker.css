@@ -1,0 +1,26 @@
+.meal-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 20px;
+  align-items: center;
+}
+.tracker-container {
+  box-shadow: 0px 10px 10px black;
+  margin: 15px 0px;
+  background-color: rgb(27, 31, 36);
+}
+
+.underline-container {
+  border-bottom: 2px solid rgb(56, 56, 56);
+}
+
+.add-food {
+  color: rgb(0, 89, 255);
+  margin: 10px 20px;
+  padding-bottom: 10px;
+}
+
+.add-food:hover {
+  color: rgb(75, 138, 255);
+  cursor: pointer;
+}
