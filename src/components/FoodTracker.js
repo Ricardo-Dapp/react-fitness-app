@@ -1,5 +1,4 @@
 import React from "react";
-import "../styles/FoodTracker.css";
 
 const FoodTracker = (props) => {
   return (
@@ -10,8 +9,10 @@ const FoodTracker = (props) => {
           <h2>0</h2>
         </div>
       </div>
-
-      <h5 className="add-food">ADD FOOD</h5>
+      <div className="addFood-input-container">
+        <input type="text" placeholder="Add Food" />
+        <h5 className="add-food">ADD FOOD</h5>
+      </div>
     </div>
   );
 };

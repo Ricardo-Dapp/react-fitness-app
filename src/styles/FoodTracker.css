@@ -24,3 +24,13 @@
   color: rgb(75, 138, 255);
   cursor: pointer;
 }
+.addFood-input-container {
+  display: flex;
+  margin-left: 10px;
+  align-items: center;
+}
+
+input {
+  width: 200px;
+  height: 25px;
+}
