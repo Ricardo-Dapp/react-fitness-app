@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
-import { addBreakfastItem } from "../features/BreakfastListSlice";
+import { addLunchItem } from "../features/LunchListSlice";
 
-function BreakfastPage() {
+function LunchPage() {
   const dispatch = useDispatch();
 
   const [food, setFood] = useState({
@@ -12,7 +12,7 @@ function BreakfastPage() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    dispatch(addBreakfastItem(food));
+    dispatch(addLunchItem(food));
     setFood({ name: "", calories: 0 });
   };
 
@@ -21,11 +21,10 @@ function BreakfastPage() {
     const value = event.target.value;
     setFood((values) => ({ ...values, [name]: value }));
   };
-
   return (
     <div className="m-5">
       <div className="row g-3 align-items-center text-center justify-content-center">
-        <h1 className="">Add Breakfast Items</h1>
+        <h1 className="">Add Lunch Items</h1>
 
         <div className="col-auto">
           <input
@@ -59,4 +58,4 @@ function BreakfastPage() {
   );
 }
 
-export default BreakfastPage;
+export default LunchPage;

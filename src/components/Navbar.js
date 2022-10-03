@@ -1,12 +1,11 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   return (
     <nav className="navbar navbar-expand-md bg-light">
       <div className="container-fluid ">
-        <a className="navbar-brand" href="#">
-          DietDiary
-        </a>
+        <h2 className="navbar-brand">DietDiary</h2>
         <button
           className="navbar-toggler"
           type="button"
@@ -21,9 +20,9 @@ export default function Navbar() {
         <div className="collapse navbar-collapse  " id="nav">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="#">
+              <Link to="/" className="nav-link" aria-current="page">
                 Dashboard
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#">
@@ -31,9 +30,9 @@ export default function Navbar() {
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <Link to="/GoalsPage" className="nav-link" aria-current="page">
                 Goals
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
